@@ -1,3 +1,128 @@
+$hover-gray: #e6e6e6;
+
+@mixin flexCenterJustify($direction) {
+    display: flex;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin flexCenterAlign($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin contain {
+    max-width: 1300px;
+}
+
 #header {
+    #sticky-banner {
+        @include flexCenterJustify(column);
+
+        background-color: black;
+        color: white;
+        height: 180px;
+        padding-left: 30px;
+
+        .container {
+            @include contain();
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 25px;
+            }
     
+            h4 {
+                font-size: 1.05rem;
+    
+                strong {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    #gradient-border-divider {
+        height: 5px;
+        background-image: linear-gradient(to right, pink, purple, rgb(55, 114, 182), 
+        #bbb, #eee, #666, rgb(74, 53, 192));
+    }
+
+    #header-content {
+        #nav-container {
+            background-color: #eee;
+
+            #nav {
+                @include contain();
+                display: flex;
+                justify-content: space-between;
+
+                #logo-container {
+                    height: 6rem;
+                    margin: 10px 0 80px 25px;
+    
+                    a {
+                        #logo {
+                            height: 6rem;
+                            margin: 5px;
+    
+                            &:hover {
+                                background-color: $hover-gray;
+                            }
+                        }
+                    }
+                }
+
+                #nav-bar {
+                    width: 60%;
+                    #nav-bar-list {
+                        margin-top: 50px;
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: rgb(16, 55, 100);
+                                font-size: 1.05rem;
+                                padding: 1rem;
+                                // font-weight: bold;
+
+                                &:hover {
+                                    background-color: $hover-gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #header-title {
+                font-size: 4.5rem;
+                padding-bottom: 1rem;
+                color: gray;
+                font-weight: lighter;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        #main-banner {
+            #prime-info {
+                display: flex;
+                justify-content: space-between;
+
+                h2 {
+                    font-size: 3rem;
+                }
+
+                #main-banner-img {
+                    background-image: url('../img/glasses.svg');
+                    
+                }
+            }
+        }
+    }
+
 }

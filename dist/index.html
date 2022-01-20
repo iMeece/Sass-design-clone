@@ -4,11 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
     <title>Sass Design Clone</title>
 </head>
 <body>
     <div id="content">
-        
+        <div id="content-wrap">
+                    <!-- HEADER -->
+        <header id="header">
+            <div id="sticky-banner">
+                <h3>Black Lives Matter</h3>
+                <h4>
+                    Sass stands with the protesters against police violence. 
+                    We encourage our users to get in the streets and join them if you can.
+                </h4>
+            </div>
+            <div id="header-content">
+                <div id="nav-container">
+                    <nav id="nav">
+                        <div id="logo"></div>
+                        <div id="nav-bar">
+                            <ul id="nav-bar-list">
+                                <li><a href="#">Install</a></li>
+                                <li><a href="#">Learn Sass</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Documentation</a></li>
+                                <li><a href="#">Get Involved</a></li>
+                                <li><div id="nav-search"></div></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h1 id="header-title">CSS with superpowers</h1>
+                </div>
+                <div id="main-banner">
+                    <div>
+                        <h2>
+                            Sass is the most mature, stable, and powerful professional grade CSS extension language 
+                            in the world.
+                        </h2>
+                        <div id="main-banner-img"></div>
+                    </div>
+                    <div id="additional-info">
+                        <h4>Current Releases:</h4>
+                        <div>
+                            <ul>
+                                <li><a href="#">Dart Sass</a></li>
+                                <li><a href="#">1.49.0</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#">LibSass</a></li>
+                                <li><a href="#">3.6.5</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#">Ruby Sass</a></li>
+                                <li><div id="ruby-sass-img"></div></li>
+                            </ul>
+                        </div>
+                        <a href="#">Implementation Guide</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main id="main">
+            <section id="showcase-container">
+                <div class="showcase">
+                    <div class="item">
+                        <h3>CSS Compatible</h3>
+                        <p>
+                            Sass is completely compatible with all versions of CSS. 
+                            We take this compatibility seriously, 
+                            so that you can seamlessly use any available CSS libraries.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>Feature Rich</h3>
+                        <p>
+                            Sass boasts more features and abilities than any other CSS extension language out there. 
+                            The Sass Core Team has worked endlessly to not only keep up, but stay ahead.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>Mature</h3>
+                        <p>Sass has been actively supported for about 15 years by its loving Core Team.</p>
+                    </div>
+                </div>
+                <div class="showcase">
+                    <div class="item">
+                        <h3>Industry Approved</h3>
+                        <p>Over and over again, the industry is choosing Sass as the premier CSS extension language.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Large Community</h3>
+                        <p>
+                            Sass is actively supported and developed by a consortium of several tech companies and 
+                            hundreds of developers.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h3>Frameworks</h3>
+                        <p>There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        </div>
+
+        <!-- FOOTER -->
+        <footer id="footer"></footer>
     </div>
     <script src="main.js"></script>
 </body>

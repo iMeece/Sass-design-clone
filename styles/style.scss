@@ -1,0 +1,11 @@
+@import './header';
+@import './footer';
+
+#content {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 150px;
+}

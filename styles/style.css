@@ -1,3 +1,126 @@
+#header #sticky-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 180px;
+  padding-left: 30px;
+}
+
+#header #sticky-banner .container {
+  max-width: 1300px;
+}
+
+#header #sticky-banner .container h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#header #sticky-banner .container h4 {
+  font-size: 1.05rem;
+}
+
+#header #sticky-banner .container h4 strong {
+  font-weight: bold;
+}
+
+#header #gradient-border-divider {
+  height: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(pink), color-stop(purple), color-stop(#3772b6), color-stop(#bbb), color-stop(#eee), color-stop(#666), to(#4a35c0));
+  background-image: linear-gradient(to right, pink, purple, #3772b6, #bbb, #eee, #666, #4a35c0);
+}
+
+#header #header-content #nav-container {
+  background-color: #eee;
+}
+
+#header #header-content #nav-container #nav {
+  max-width: 1300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-content #nav-container #nav #logo-container {
+  height: 6rem;
+  margin: 10px 0 80px 25px;
+}
+
+#header #header-content #nav-container #nav #logo-container a #logo {
+  height: 6rem;
+  margin: 5px;
+}
+
+#header #header-content #nav-container #nav #logo-container a #logo:hover {
+  background-color: #e6e6e6;
+}
+
+#header #header-content #nav-container #nav #nav-bar {
+  width: 60%;
+}
+
+#header #header-content #nav-container #nav #nav-bar #nav-bar-list {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#header #header-content #nav-container #nav #nav-bar #nav-bar-list li a {
+  text-decoration: none;
+  color: #103764;
+  font-size: 1.05rem;
+  padding: 1rem;
+}
+
+#header #header-content #nav-container #nav #nav-bar #nav-bar-list li a:hover {
+  background-color: #e6e6e6;
+}
+
+#header #header-content #nav-container #header-title {
+  font-size: 4.5rem;
+  padding-bottom: 1rem;
+  color: gray;
+  font-weight: lighter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header #header-content #main-banner #prime-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header #header-content #main-banner #prime-info h2 {
+  font-size: 3rem;
+}
+
+#header #header-content #main-banner #prime-info #main-banner-img {
+  background-image: url("../img/glasses.svg");
+}
+
 #footer {
   position: absolute;
   bottom: 0;

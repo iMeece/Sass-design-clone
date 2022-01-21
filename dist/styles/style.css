@@ -171,9 +171,10 @@
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: 1.01rem;
+  margin-top: 15px;
 }
 
-#header #header-content #main-banner ul {
+#header #header-content #main-banner #additional-info ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,16 +188,16 @@
   margin: 0 15px;
 }
 
-#header #header-content #main-banner ul li {
+#header #header-content #main-banner #additional-info ul li {
   margin: 0 2px;
 }
 
-#header #header-content #main-banner a {
+#header #header-content #main-banner #additional-info a {
   color: white;
   font-weight: bold;
 }
 
-#header #header-content #main-banner #implementation-link {
+#header #header-content #main-banner #additional-info #implementation-link {
   margin: 0 2px;
 }
 

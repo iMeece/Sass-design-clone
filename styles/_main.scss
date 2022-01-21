@@ -1,0 +1,47 @@
+$text-gray: rgb(116, 116, 116);
+
+@mixin flexCenterJustify($direction) {
+    display: flex;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin flexCenterAlign($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin contain {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#main {
+    
+    #showcase-container {
+        @include contain();
+        margin-top: 60px;
+
+        .showcase {
+            @include flexCenterJustify(row);
+            color: $text-gray;
+            justify-content: space-evenly;
+
+            .item {
+                width: 30%;
+                margin: 30px;
+
+                h3 {
+                    font-size: 2rem;
+                    margin-bottom: 25px;
+                }
+
+                p {
+                    font-size: 1.15rem;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+    }
+}

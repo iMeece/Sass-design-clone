@@ -154,6 +154,7 @@ $text-blue: rgb(31, 73, 112);
                 padding-bottom: 30px;
                 font-size: 1.01rem;
                 margin-top: 15px;
+                max-width: 100%;
 
                 ul {
                     @include flexCenterJustify(row);

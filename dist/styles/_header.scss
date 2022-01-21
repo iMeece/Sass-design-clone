@@ -1,4 +1,6 @@
 $hover-gray: #e6e6e6;
+$text-gray: gray;
+$text-blue: rgb(31, 73, 112);
 
 @mixin flexCenterJustify($direction) {
     display: flex;
@@ -13,7 +15,8 @@ $hover-gray: #e6e6e6;
 }
 
 @mixin contain {
-    max-width: 1300px;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 #header {
@@ -110,19 +113,68 @@ $hover-gray: #e6e6e6;
 
         #main-banner {
             #prime-info {
-                display: flex;
+                @include flexCenterJustify(row);
+                @include contain();
                 justify-content: space-between;
+                align-items: center;
+                width: 100%;
 
                 h2 {
-                    font-size: 3rem;
+                    font-size: 1.8rem;
+                    color: $text-blue;
+                    font-weight: lighter;
+                    width: 46%;
+                    margin-left: 25px;
+                    line-height: 3rem;
+                }
+
+                #main-banner-img-container {
+                    width: 46%;
+                    height: 200px;
+                    margin-right: 20px;
+                    margin-top: 20px;
                 }
 
                 #main-banner-img {
                     background-image: url('../img/glasses.svg');
-                    
+                    background-position: top;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    height: 100%;
                 }
             }
+
+            #additional-info {
+                @include contain();
+                @include flexCenterJustify(row);
+                background-color: rgb(191, 64, 128);
+                color: white;
+                padding-top: 20px;
+                padding-bottom: 30px;
+                font-size: 1.01rem;
+            }
+
+            ul {
+                @include flexCenterJustify(row);
+                margin: 0 15px;
+
+                li {
+                    margin: 0 2px;
+                }
+            }
+
+            a {
+                color: white;
+                font-weight: bold;
+            }
+
+            #implementation-link {
+                margin: 0 2px;
+            }
         }
+
+
     }
 
 }

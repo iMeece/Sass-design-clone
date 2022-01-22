@@ -15,6 +15,13 @@
   padding-left: 30px;
 }
 
+@media (max-width: 425px) {
+  #header #sticky-banner {
+    padding-left: 15px;
+    height: 230px;
+  }
+}
+
 #header #sticky-banner .container {
   max-width: 1500px;
   margin: 0 auto;
@@ -30,6 +37,13 @@
 #header #sticky-banner .container h3 {
   font-size: 2rem;
   margin-bottom: 25px;
+}
+
+@media (max-width: 425px) {
+  #header #sticky-banner .container h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+  }
 }
 
 #header #sticky-banner .container h4 {
@@ -82,9 +96,27 @@
   }
 }
 
+@media (max-width: 650px) {
+  #header #header-content #nav-container #nav #logo-container {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #header #header-content #nav-container #nav #logo-container {
+    margin-left: 10px;
+  }
+}
+
 #header #header-content #nav-container #nav #logo-container a #logo {
   height: 6rem;
   margin: 5px;
+}
+
+@media (max-width: 650px) {
+  #header #header-content #nav-container #nav #logo-container a #logo {
+    height: 3.5rem;
+  }
 }
 
 #header #header-content #nav-container #nav #logo-container a #logo:hover {
@@ -114,6 +146,18 @@
             flex-direction: column;
     margin-top: 30px;
     margin-left: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  #header #header-content #nav-container #nav #nav-bar #nav-bar-list {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  #header #header-content #nav-container #nav #nav-bar #nav-bar-list {
+    margin-left: 0;
   }
 }
 
@@ -150,6 +194,12 @@
 @media (max-width: 768px) {
   #header #header-content #nav-container #header-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  #header #header-content #nav-container #header-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -200,6 +250,14 @@
   }
 }
 
+@media (max-width: 650px) {
+  #header #header-content #main-banner #prime-info h2 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+  }
+}
+
 #header #header-content #main-banner #prime-info #main-banner-img-container {
   width: 46%;
   height: 200px;
@@ -215,6 +273,27 @@
   }
 }
 
+@media (max-width: 650px) {
+  #header #header-content #main-banner #prime-info #main-banner-img-container {
+    height: 200px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  #header #header-content #main-banner #prime-info #main-banner-img-container {
+    margin-top: 10px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 320px) {
+  #header #header-content #main-banner #prime-info #main-banner-img-container {
+    height: 100px;
+    margin-top: 30px;
+  }
+}
+
 #header #header-content #main-banner #prime-info #main-banner-img {
   background-image: url("../img/glasses.svg");
   background-position: top;
@@ -222,6 +301,12 @@
   background-size: contain;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 650px) {
+  #header #header-content #main-banner #prime-info #main-banner-img {
+    background-position: center;
+  }
 }
 
 #header #header-content #main-banner #additional-info {
@@ -361,6 +446,18 @@
   }
 }
 
+@media (max-width: 320px) {
+  #footer #main-container {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  #footer #main-container {
+    margin-left: 15px;
+  }
+}
+
 #footer #main-container h5 {
   margin-bottom: 20px;
   color: gray;
@@ -414,6 +511,12 @@
   #footer #button-links {
     margin-top: 20px;
     margin-left: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #footer #button-links {
+    margin-left: 15px;
   }
 }
 
@@ -471,14 +574,45 @@
   }
 }
 
+@media (max-width: 650px) {
+  #main #showcase-container .showcase .item {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #main #showcase-container .showcase .item {
+    width: 100%;
+  }
+}
+
 #main #showcase-container .showcase .item h3 {
   font-size: 2rem;
   margin-bottom: 25px;
 }
 
+@media (max-width: 650px) {
+  #main #showcase-container .showcase .item h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #main #showcase-container .showcase .item h3 {
+    margin-bottom: 15px;
+  }
+}
+
 #main #showcase-container .showcase .item p {
   font-size: 1.15rem;
   line-height: 1.7rem;
+}
+
+@media (max-width: 650px) {
+  #main #showcase-container .showcase .item p {
+    font-size: 1.2rem;
+  }
 }
 
 #content {

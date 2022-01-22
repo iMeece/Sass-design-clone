@@ -9,4 +9,8 @@
 
 #content-wrap {
     padding-bottom: 200px;
+
+    @media (max-width: 768px) {
+        padding-bottom: 300px;
+    }
 }

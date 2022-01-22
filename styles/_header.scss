@@ -30,6 +30,11 @@ $text-blue: rgb(31, 73, 112);
 
         .container {
             @include contain();
+            padding: 0 5px;
+
+            @media (max-width: 1440px) {
+                margin: 0;
+            }
 
             h3 {
                 font-size: 2rem;
@@ -38,6 +43,7 @@ $text-blue: rgb(31, 73, 112);
     
             h4 {
                 font-size: 1.05rem;
+                line-height: 1.3rem;
     
                 strong {
                     font-weight: bold;
@@ -61,9 +67,17 @@ $text-blue: rgb(31, 73, 112);
                 display: flex;
                 justify-content: space-between;
 
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
                 #logo-container {
                     height: 6rem;
                     margin: 10px 0 80px 25px;
+
+                    @media (max-width: 768px) {
+                        margin-bottom: 0px;
+                    }
     
                     a {
                         #logo {
@@ -79,12 +93,25 @@ $text-blue: rgb(31, 73, 112);
 
                 #nav-bar {
                     width: 60%;
+                    
                     #nav-bar-list {
                         margin-top: 50px;
                         display: flex;
                         justify-content: space-evenly;
+                        font-weight: bold;
+
+                        @media (max-width: 768px) {
+                            flex-direction: column;
+                            margin-top: 30px;
+                            margin-left: 50px;
+                        }
 
                         li {
+
+                            @media (max-width: 768px) {
+                                margin-bottom: 30px;
+                            }
+
                             a {
                                 text-decoration: none;
                                 color: rgb(16, 55, 100);
@@ -108,6 +135,10 @@ $text-blue: rgb(31, 73, 112);
                 font-weight: lighter;
                 display: flex;
                 justify-content: center;
+
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
         }
 
@@ -119,6 +150,10 @@ $text-blue: rgb(31, 73, 112);
                 align-items: center;
                 width: 100%;
 
+                @media (max-width: 768px) {
+                    flex-direction: column;
+                }
+
                 h2 {
                     font-size: 1.8rem;
                     color: $text-blue;
@@ -126,6 +161,11 @@ $text-blue: rgb(31, 73, 112);
                     width: 46%;
                     margin-left: 25px;
                     line-height: 3rem;
+                    
+                    @media (max-width: 768px) {
+                        width: 90%;
+                        margin: 0 auto;
+                    }
                 }
 
                 #main-banner-img-container {
@@ -133,6 +173,12 @@ $text-blue: rgb(31, 73, 112);
                     height: 200px;
                     margin-right: 20px;
                     margin-top: 20px;
+                                        
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        margin-right: 0;
+                        height: 250px;
+                    }
                 }
 
                 #main-banner-img {
@@ -155,6 +201,18 @@ $text-blue: rgb(31, 73, 112);
                 font-size: 1.01rem;
                 margin-top: 15px;
                 max-width: 100%;
+           
+                @media (max-width: 768px) {
+                    text-align: center;
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+
+                h4 {
+                    @media (max-width: 768px) {
+                        margin-bottom: 4px;
+                    }
+                }
 
                 ul {
                     @include flexCenterJustify(row);
@@ -162,6 +220,10 @@ $text-blue: rgb(31, 73, 112);
     
                     li {
                         margin: 0 2px;
+          
+                        @media (max-width: 768px) {
+                            margin: 4px 2px;
+                        }
                     }
                 }
     

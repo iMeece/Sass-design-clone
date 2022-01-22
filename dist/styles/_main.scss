@@ -23,14 +23,28 @@ $text-gray: rgb(116, 116, 116);
         @include contain();
         margin-top: 60px;
 
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+
         .showcase {
             @include flexCenterJustify(row);
             color: $text-gray;
             justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            @media (max-width: 768px) {
+                margin: 0 10px;
+            }
 
             .item {
-                width: 30%;
+                width: 25%;
                 margin: 30px;
+
+                @media (max-width: 768px) {
+                    width: 45%;
+                    margin: 15px;
+                }
 
                 h3 {
                     font-size: 2rem;

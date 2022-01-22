@@ -90,19 +90,20 @@ $hover-gray: #e6e6e6;
 
     #button-links {
         @include contain();
-        background-color: rgb(0, 132, 255);
-        padding: 7px 14px;
-        border-radius: 15px;
         font-size: 0.9rem;
-        min-width: 120px;
+        width: 20%;
 
         @media (max-width: 1440px) {
             margin: 0 50px;
+        }
+        @media (max-width: 1000px) {
+            width: 37%;
         }
 
         @media (max-width: 768px) {
             margin-top: 20px;
             margin-left: 30px;
+            width: auto;
         }
 
         @media (max-width: 425px) {
@@ -112,6 +113,13 @@ $hover-gray: #e6e6e6;
         a {
             color: white;
             text-decoration: none;
+            padding: 7px 14px;
+            background-color: rgb(0, 132, 255);
+            border-radius: 15px;
+
+            i {
+                font-size: 1.05rem;
+            }
         }
     }
 }

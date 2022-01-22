@@ -5,6 +5,52 @@
 #content {
     position: relative;
     min-height: 100vh;
+
+    #message-display {
+        position: fixed;
+        top: -20%;
+        left: 50%;
+        background-color: rgb(238, 238, 238);
+        width: 300px;
+        height: 100px;
+        margin-left: -150px;
+        border-radius: 15px;
+        border: 2px solid rgb(61, 61, 61);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        animation-name: alert-message;
+        animation-duration: 4s;
+
+        .message-p {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            line-height: 1.7rem;
+            color: rgb(29, 29, 29);
+        }
+    }
+
+    @keyframes alert-message {
+        0% {
+            top: -20%;
+        }
+
+        25% {
+            top: 10%;
+        }
+
+        75% {
+            top: 10%
+        }
+        
+        100% {
+            top: -20%;
+        }
+    }
 }
 
 #content-wrap {

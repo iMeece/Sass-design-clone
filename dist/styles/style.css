@@ -665,6 +665,7 @@
 #content {
   position: relative;
   min-height: 100vh;
+  font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #content #message-display {
